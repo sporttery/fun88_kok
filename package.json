@@ -1,0 +1,37 @@
+{
+  "name": "fun88_kok",
+  "version": "1.0.0",
+  "description": "乐天堂和kok体育数据采集程序",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "node index.js test",
+    "serve": "node index.js",
+    "run": "node index.js",
+    "start": "node index.js",
+    "pkgwin": "rm bin/index.js && cp src/index.js bin/ && cd bin && pkg -t  win-x64 index.js -o main.exe && rm bin/index.js",
+    "pkgmac": "rm bin/index.js && cp src/index.js bin/ && cd bin && pkg -t  mac index.js -o main && rm bin/index.js"
+  },
+  "pkg": {
+    "scripts": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sporttery/fun88_kok.git"
+  },
+  "keywords": [
+    "体育，乐天堂"
+  ],
+  "author": "张伟",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sporttery/fun88_kok/issues"
+  },
+  "homepage": "https://github.com/sporttery/fun88_kok#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer-core": "^5.2.0",
+    "superagent": "^5.3.1"
+  },
+  "devDependencies": {}
+}
